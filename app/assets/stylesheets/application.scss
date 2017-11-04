@@ -1,44 +1,268 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+//body
+body{
+  background-image: url(FK_top_background.jpg);
+  background-repeat: repeat;
+}
 
-//pages index\
+//pages index
 
-body {
-  /* 画像ファイルの指定 */
-  background-image:  url(backgraund.jpg);
+//header
+header{
+  width: 100%;
+  height: 120px;
+  background-image: url(header_bg.jpg);
+}
 
-  /* 画像を常に天地左右の中央に配置 */
-  background-position: center center;
+a.header-left{
+  float: left;
+  margin-left: 35px;
+  margin-top: 20px;
+}
 
-  /* 画像をタイル状に繰り返し表示しない */
-  background-repeat: no-repeat;
+a.header-left img{
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.header-right{
+  float: left;
+  margin-top: 50px;
+}
+
+.header-right li{
+  float: left;
+  list-style: none;
+  padding-left: 40px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.header-right li a{
+  text-decoration: none;
+  color: rgb(200, 166, 18);
+}
+
+.header-right li a img{
+  width: 30px;
+  height: 30px;
+}
+
+//top-wrapper
+.top-wrapper{
+  height: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.top-wrapper img{
+  height: 450px;
+  width: 100%;
+}
+
+.top-wrapper ul{
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.top-wrapper li{
+  float: left;
+  list-style: none;
+}
+
+.top-wrapper li img{
+  width: 50px;
+  height: 50px;
+}
+
+//content-wrapper
+.content-wrapper{
+  height: 950px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-wrapper h1{
+  text-align: center;
+  font-family: arial;
+  font-size: 50px;
+  color: rgb(200, 166, 18);
+}
+
+.content-wrapper p{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "メイリオ", sans-serif, arial;
+  color: rgb(62, 58, 58);
+}
+
+.content-wrapper .main-image{
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content-wrapper .main-image img.main-image1{
+  width: 531px;
+  height: 325px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.content-wrapper .main-image img.main-image2{
+  width: 335px;
+  height: 325px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.content-wrapper .main-image img.main-image3{
+  width: 490px;
+  height: 226px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.content-wrapper .main-image img.main-image4{
+  width: 375px;
+  height: 226px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 
 
+//detail-wrapper
+.detail-wrapper{
+  margin-top: 10px;
+  width: 100%;
+  height: 1200px;
+}
 
-  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+.detail-wrapper .title-bg-img{
+  width: 100%;
+  height: 300px;
+  background-image: url(title_bg.jpg);
   background-size: cover;
-
-  /* 背景画像が読み込まれる前に表示される背景のカラー */
-  background-color: #FF9E80;
 }
 
+.detail-wrapper .title-bg-img h1{
+  font-size: 50px;
+  color: rgb(200, 166, 18);
+  text-align: center;
+  padding: 130px 0;
+}
 
-.container .row{
-  margin-top: 200px;
+.detail-wrapper .menu-image{
+  margin: 30px 20%;
+}
+
+.detail-wrapper .menu-image .menu-imge-tag{
+  width: 350px;
+  height: 400px;
+  float: left;
+}
+
+.detail-wrapper .menu-image .menu-imge-tag img{
+   width: 300px;
+   height: 300px;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+.detail-wrapper .menu-image .menu-imge-tag .menu-detail img{
+  width: 300px;
+  height: 120px;
+}
+
+//acsess-wrapper
+.acsess-wrapper{
+  width: 100%;
+  height: 980px;
+  margin-bottom: 5px;
+}
+
+.acsess-wrapper .title-bg-img{
+  width: 100%;
+  height: 300px;
+  background-image: url(title_bg2.jpg);
+  background-size: cover;
+}
+
+.acsess-wrapper .title-bg-img h1{
+  font-size: 50px;
+  color: rgb(200, 166, 18);
+  text-align: center;
+  padding: 130px 0;
+}
+
+.acsess-wrapper .google-map iframe{
+  margin-top: 100px;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+.acsess-wrapper .shop-detail p{
+  margin-left: 17%;
+  margin-right: 43%;
+}
+
+.acsess-wrapper .shop-detail p span.address{
+  padding-left: 66px;
+}
+
+.acsess-wrapper .shop-detail p span.dinner{
+  padding-left: 88px;
+}
+
+//footer
+footer{
+  width: 100%;
+  height: 400px;
+  background-image: url(footer/footer_bg.jpg);
+  background-size: cover;
+}
+
+footer .to-top-bg{
+  width: 100%;
+  height: 75px;
+  background-image: url(footer/to_top_bg.jpg);
+  background-size: cover;
+}
+
+footer .to-top-bg a img{
+  margin: 5px 45%;
+}
+
+footer .footer-menu{
+  margin-top: 40px;
+  margin-left: 17%;
+  margin-right: 43%;
+}
+
+footer .footer-menu li{
+  list-style: none;
   color: #fff;
+  font-size: 17px;
+  letter-spacing: 3px;
 }
 
-
-
-.container .row p{
-  font-size: 25px;
+footer .footer-menu li.footer-title{
+  font-size: 22px;
 }
 
-.col-md-6 a{
-  padding-left: 10px;
+footer .copy-writing{
+  width: 100%;
+  height: 50px;
+  background-image: url(footer/copyright_bg.jpg);
+  background-size: cover;
 }
-.col-md-6 a img{
-  margin-top: 180px;
-  margin-bottom: 30px;
+
+footer .copy-writing p{
+  padding-top: 20px;
+  text-align: center;
 }
