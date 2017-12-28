@@ -12,9 +12,10 @@ body{
 //header
 
 a.header-left img{
-  margin-left: 20px;
-  width: 80px;
-  height: 80px;
+  margin-left: 15px;
+  width: 75px;
+  height: 75px;
+  margin-top: 10px;
 }
 
 ul.navbar-right{
@@ -28,9 +29,15 @@ ul.navbar-right{
 .header-right li{
   float: left;
   list-style: none;
-  padding-left: 40px;
-  font-size: 18px;
+  padding-left: 35px;
+  font-size: 14px;
   letter-spacing: 3px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.header-right li.header-menu{
+  margin-top: 20px;
 }
 
 .header-right li a{
@@ -123,14 +130,14 @@ ul.navbar-right{
 .content-wrapper h1{
   text-align: center;
   font-family: arial;
-  font-size: 50px;
+  font-size: 36px;
   color: rgb(200, 166, 18);
 }
 
 .content-wrapper p{
   padding-top: 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   font-family: "メイリオ", sans-serif, arial;
   color: rgb(62, 58, 58);
 }
@@ -236,7 +243,7 @@ ul.navbar-right{
 }
 
 .detail-wrapper .title-bg-img h1{
-  font-size: 50px;
+  font-size: 36px;
   color: rgb(200, 166, 18);
   text-align: center;
   padding: 130px 0;
@@ -363,7 +370,6 @@ ul.navbar-right{
   }
 
   .acsess-wrapper .title-bg-img h1{
-    font-size: 25px;
     color: rgb(200, 166, 18);
     text-align: center;
     padding: 75px 0;
